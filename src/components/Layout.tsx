@@ -63,9 +63,9 @@ export default function Layout({ children }: { children: ReactNode }) {
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-2">
-                <img src="https://i.ibb.co/Lhb1qkGs/LOGO.png" alt="Raymond Auto Export" className="h-6 sm:h-8 md:h-10 w-auto" referrerPolicy="no-referrer" />
+                <img src="https://i.ibb.co/Lhb1qkGs/LOGO.png" alt="Raymond Auto Export Guangzhou" className="h-6 sm:h-8 md:h-10 w-auto" referrerPolicy="no-referrer" />
                 <span className="font-bold text-sm sm:text-base md:text-lg leading-tight tracking-tight">
-                  Raymond Auto Export
+                  Raymond Auto Export Guangzhou
                 </span>
               </Link>
             </div>
@@ -164,7 +164,7 @@ export default function Layout({ children }: { children: ReactNode }) {
               <div className="mb-4">
                 <div className="flex flex-col">
                   <span className="font-bold text-lg text-white leading-tight tracking-tight">
-                    Raymond Auto Export
+                    Raymond Auto Export Guangzhou
                   </span>
                   <span className="text-[10px] text-zinc-500 font-medium">
                     {t('common.memberOf')}
@@ -243,7 +243,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           </div>
           <div className="border-t border-zinc-800 mt-12 pt-8 text-sm text-center">
             <p>
-              &copy; {new Date().getFullYear()} Raymond Auto Export. {t('footer.rights')}
+              &copy; {new Date().getFullYear()} Raymond Auto Export Guangzhou. {t('footer.rights')}
             </p>
           </div>
         </div>
