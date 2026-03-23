@@ -176,7 +176,7 @@ export const cars = [
     year: "2025-2026",
     mileage: "0 km",
     fuelType: { zh: "纯电动 (EV)", en: "EV" },
-    image: "https://placehold.co/600x400/e2e8f0/475569?text=Wuling+Aishang+A100+EV",
+    image: "https://i.ibb.co/LbkpKHJ/A100.png",
     specs: {
       zh: {
         "品牌": "五菱 (Wuling)",
@@ -202,7 +202,7 @@ export const cars = [
     year: "2025-2026",
     mileage: "0 km",
     fuelType: { zh: "汽油/新能源", en: "Gasoline/NEV" },
-    image: "https://placehold.co/600x400/e2e8f0/475569?text=Bestune+Series",
+    image: "https://i.ibb.co/R4ZsbkFh/image.png",
     specs: {
       zh: {
         "品牌": "奔腾 (Bestune)",
@@ -228,7 +228,7 @@ export const cars = [
     year: "2025-2026",
     mileage: "0 km",
     fuelType: { zh: "纯电动 (EV)", en: "EV" },
-    image: "https://placehold.co/600x400/e2e8f0/475569?text=GAC+AION+Series",
+    image: "https://i.ibb.co/BmH4LSW/image.jpg",
     specs: {
       zh: {
         "品牌": "广汽埃安 (GAC AION)",
@@ -256,8 +256,8 @@ export const cars = [
     year: "2025-2026",
     mileage: "0 km",
     fuelType: { zh: "纯电动", en: "EV" },
-    image: "https://placehold.co/600x400/e2e8f0/475569?text=Livan+8",
-    images: ["https://placehold.co/600x400/e2e8f0/475569?text=Livan+8", "https://placehold.co/600x400/e2e8f0/475569?text=Livan+8+Side"],
+    image: "https://i.ibb.co/bTJzBcZ/8-Livan-8.jpg",
+    images: ["https://i.ibb.co/bTJzBcZ/8-Livan-8.jpg", "https://i.ibb.co/4Z7jRxb5/8-2.jpg"],
     specs: {
       zh: {
         "品牌": "睿蓝 (Livan)",
@@ -283,8 +283,8 @@ export const cars = [
     year: "2025-2026",
     mileage: "0 km",
     fuelType: { zh: "纯电动", en: "EV" },
-    image: "https://placehold.co/600x400/e2e8f0/475569?text=Riddara+RD6+Pickup",
-    images: ["https://placehold.co/600x400/e2e8f0/475569?text=Riddara+RD6+Pickup", "https://placehold.co/600x400/e2e8f0/475569?text=Riddara+RD6+Side"],
+    image: "https://i.ibb.co/hRcp3fNx/Riddara-RD6-a.png",
+    images: ["https://i.ibb.co/hRcp3fNx/Riddara-RD6-a.png", "https://i.ibb.co/G3cqp2kS/Riddara-RD6-b.png"],
     specs: {
       zh: {
         "品牌": "雷达 (Riddara)",
@@ -310,7 +310,7 @@ export const cars = [
     year: "2025-2026",
     mileage: "0 km",
     fuelType: { zh: "纯电/增程", en: "EV/EREV" },
-    image: "https://placehold.co/600x400/e2e8f0/475569?text=Deepal+L+Series",
+    image: "https://i.ibb.co/hbb6ctX/Deep-L-series-b.webp",
     specs: {
       zh: {
         "品牌": "深蓝 (Deepal)",
@@ -336,7 +336,7 @@ export const cars = [
     year: "2025-2026",
     mileage: "0 km",
     fuelType: { zh: "纯电/增程", en: "EV/EREV" },
-    image: "https://placehold.co/600x400/e2e8f0/475569?text=Deepal+S+Series",
+    image: "https://i.ibb.co/FLbqPScy/Deepal-S-series.webp",
     specs: {
       zh: {
         "品牌": "深蓝 (Deepal)",
