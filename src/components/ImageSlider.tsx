@@ -4,8 +4,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ImageSlider({ images, alt, className = "" }: { images: string[]; alt: string; className?: string }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStart, setTouchStart] = useState<number | null>(null);
-  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const touchStartX = React.useRef<number | null>(null);
+  const touchEndX = React.useRef<number | null>(null);
 
   // the required distance between touchStart and touchEnd to be detected as a swipe
   const minSwipeDistance = 50;
@@ -18,11 +18,12 @@ export default function ImageSlider({ images, alt, className = "" }: { images: s
         alt={alt}
         className={`w-full h-full object-cover ${className}`}
         referrerPolicy="no-referrer"
+        draggable={false}
       />
     );
   }
 
-  const nextSlide = (e?: React.MouseEvent) => {
+  const nextSlide = (e?: React.MouseEvent | React.TouchEvent) => {
     if (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -30,7 +31,7 @@ export default function ImageSlider({ images, alt, className = "" }: { images: s
     setCurrentIndex((prev) => (prev + 1) % images.length);
   };
 
-  const prevSlide = (e?: React.MouseEvent) => {
+  const prevSlide = (e?: React.MouseEvent | React.TouchEvent) => {
     if (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -39,17 +40,17 @@ export default function ImageSlider({ images, alt, className = "" }: { images: s
   };
 
   const onTouchStart = (e: React.TouchEvent) => {
-    setTouchEnd(null);
-    setTouchStart(e.targetTouches[0].clientX);
+    touchEndX.current = null;
+    touchStartX.current = e.targetTouches[0].clientX;
   };
 
   const onTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
+    touchEndX.current = e.targetTouches[0].clientX;
   };
 
   const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
-    const distance = touchStart - touchEnd;
+    if (!touchStartX.current || !touchEndX.current) return;
+    const distance = touchStartX.current - touchEndX.current;
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
     if (isLeftSwipe) {
@@ -74,6 +75,7 @@ export default function ImageSlider({ images, alt, className = "" }: { images: s
           alt={`${alt} - ${currentIndex + 1}`}
           className="absolute inset-0 w-full h-full object-cover"
           referrerPolicy="no-referrer"
+          draggable={false}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
