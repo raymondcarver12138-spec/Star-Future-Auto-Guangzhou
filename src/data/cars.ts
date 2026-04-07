@@ -485,5 +485,39 @@ export const cars = [
       zh: ["数智电驱", "超低油耗", "舒适座舱", "智能安全"],
       en: ["Smart Electric Drive", "Ultra-low Fuel Consump.", "Comfort Cabin", "Smart Safety"]
     }
+  },
+  {
+    id: "c18",
+    name: "GAC Trumpchi GS3 (广汽传祺GS3)",
+    type: { zh: "SUV", en: "SUV" },
+    price: "Contact for Quote / 价格优势",
+    year: "2024-2025",
+    mileage: "大量现车",
+    fuelType: { zh: "汽油 (Gasoline)", en: "Gasoline" },
+    image: "https://duk.tw/jDcQoJ.png",
+    images: [
+      "https://duk.tw/jDcQoJ.png",
+      "https://duk.tw/vjflGX.webp",
+      "https://duk.tw/ep5zWg.webp",
+      "https://duk.tw/VX62cU.webp"
+    ],
+    specs: {
+      zh: {
+        "品牌": "广汽传祺 (GAC)",
+        "车型": "GS3",
+        "配置": "798 / 898 / 998 (灰/银/白)",
+        "货源": "南沙提，大量现车，厂家许可证"
+      },
+      en: {
+        "Brand": "GAC Trumpchi",
+        "Models": "GS3",
+        "Trims": "798 / 898 / 998 (Grey/Silver/White)",
+        "Stock": "Nansha Pickup, In-stock, Factory License"
+      }
+    },
+    features: {
+      zh: ["包刷车机", "厂家出许可证", "大量现车", "价格优势"],
+      en: ["Pre-flashed OS", "Factory License", "Large Inventory", "Pricing Advantage"]
+    }
   }
 ];

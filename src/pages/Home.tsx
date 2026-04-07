@@ -22,9 +22,14 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    // Randomly select 3 cars for the slider
-    const shuffled = [...cars].sort(() => 0.5 - Math.random());
-    setRandomCars(shuffled.slice(0, 3));
+    // Pin GAC Trumpchi GS3 (c18) to New Car of the Week, plus 2 random cars
+    const heroCar = cars.find(c => c.id === 'c18');
+    const others = cars.filter(c => c.id !== 'c18').sort(() => 0.5 - Math.random());
+    if (heroCar) {
+      setRandomCars([heroCar, ...others.slice(0, 2)]);
+    } else {
+      setRandomCars(others.slice(0, 3));
+    }
   }, []);
 
   useEffect(() => {
