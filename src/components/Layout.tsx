@@ -62,8 +62,8 @@ export default function Layout({ children }: { children: ReactNode }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4 min-h-[80px]">
             <div className="flex items-center">
-              <Link to="/" className="flex items-center space-x-3">
-                <img src="https://duk.tw/krREUe.png" alt="Star Future Auto" className="h-24 sm:h-28 md:h-32 w-auto object-contain scale-110 origin-left" referrerPolicy="no-referrer" />
+              <Link to="/" className="flex items-center space-x-5 -ml-2 sm:-ml-4">
+                <img src="https://duk.tw/krREUe.png" alt="Star Future Auto" className="h-24 sm:h-28 md:h-32 w-auto object-contain" referrerPolicy="no-referrer" />
                 <span className="font-bold text-xl sm:text-2xl md:text-3xl leading-tight tracking-tight">
                   Star Future Auto
                 </span>
