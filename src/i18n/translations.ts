@@ -50,7 +50,7 @@ export const translations = {
       feature3Desc: '专业的单证团队，熟悉各国进口政策，提供快速、合规的出口报关及目的港清关协助。',
       featuredCars: '精选车源',
       featuredDesc: '最新上架的热门出口车型',
-      newCarOfWeek: '本周新车',
+      newCarOfWeek: '本月新车',
       newCarOfWeekDesc: '最新到港，现车特惠',
     },
     inventory: {
@@ -170,7 +170,7 @@ export const translations = {
       feature3Desc: 'Professional documentation team familiar with import policies of various countries, providing fast and compliant export customs clearance and destination port assistance.',
       featuredCars: 'Featured Inventory',
       featuredDesc: 'Newly listed popular export models',
-      newCarOfWeek: 'New Car of The Week',
+      newCarOfWeek: 'New Car of The Month',
       newCarOfWeekDesc: 'Newly arrived, special offers on in-stock vehicles',
     },
     inventory: {

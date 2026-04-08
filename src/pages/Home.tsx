@@ -22,14 +22,11 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    // Pin GAC Trumpchi GS3 (c18) to New Car of the Week, plus 2 random cars
-    const heroCar = cars.find(c => c.id === 'c18');
-    const others = cars.filter(c => c.id !== 'c18').sort(() => 0.5 - Math.random());
-    if (heroCar) {
-      setRandomCars([heroCar, ...others.slice(0, 2)]);
-    } else {
-      setRandomCars(others.slice(0, 3));
-    }
+    // Pin latest cars (c19, c18) to New Car of the Month, plus 1 random car
+    const pinIds = ['c19', 'c18'];
+    const pinnedCars = cars.filter(c => pinIds.includes(c.id)).sort((a, b) => pinIds.indexOf(a.id) - pinIds.indexOf(b.id));
+    const others = cars.filter(c => !pinIds.includes(c.id)).sort(() => 0.5 - Math.random());
+    setRandomCars([...pinnedCars, ...others].slice(0, 3));
   }, []);
 
   useEffect(() => {

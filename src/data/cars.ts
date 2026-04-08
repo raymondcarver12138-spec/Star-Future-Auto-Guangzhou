@@ -519,5 +519,43 @@ export const cars = [
       zh: ["包刷车机", "厂家出许可证", "大量现车", "价格优势"],
       en: ["Pre-flashed OS", "Factory License", "Large Inventory", "Pricing Advantage"]
     }
+  },
+  {
+    id: "c19",
+    name: "GAC AION i60 210版",
+    type: { zh: "SUV", en: "SUV" },
+    price: "Contact for Quote",
+    year: "2024-2025",
+    mileage: "0 km",
+    fuelType: { zh: "增程式 (REEV)", en: "REEV" },
+    image: "https://duk.tw/HyrOW9.png",
+    images: [
+      "https://duk.tw/HyrOW9.png",
+      "https://duk.tw/erDCgp.png",
+      "https://duk.tw/mpTyCx.webp",
+      "https://duk.tw/3bbozP.webp",
+      "https://duk.tw/fXt6MW.webp",
+      "https://duk.tw/McP9Ow.webp",
+      "https://duk.tw/24viJi.webp",
+      "https://duk.tw/NhxnKo.webp"
+    ],
+    specs: {
+      zh: {
+        "品牌": "广汽埃安 (GAC AION)",
+        "车型": "i60 210版",
+        "动力系统": "1.5L 增程器 + 高功率电机 (180kW)",
+        "续航": "CLTC纯电210km / 综合超1200km"
+      },
+      en: {
+        "Brand": "GAC AION",
+        "Models": "i60 210 Edition",
+        "Powertrain": "1.5L REEV + 180kW Motor",
+        "Range": "CLTC EV 210km / Combined 1200+km"
+      }
+    },
+    features: {
+      zh: ["无里程焦虑", "空间魔术师 (纯平后备箱)", "50W无线快充", "6kW V2L外放电"],
+      en: ["No Range Anxiety", "Magic Flat Trunk Space", "50W Fast Wireless Charge", "6kW V2L Output"]
+    }
   }
 ];
